@@ -151,7 +151,6 @@ header .navbar.navbar-light .nav-link.active {
 .site-hero {
   background-size: cover;
   background-position: center center;
-  min-height: 750px;
   height: 100vh;
 }
 
@@ -1615,3 +1614,36 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+
+.start-in{
+  display:inline-flex;
+  background-color:#8ab92d;
+  color:#fff;
+  padding:5px 30px;
+  margin-right:20px;
+  margin-bottom:20px;
+  font-size:14px;
+  text-transform:uppercase
+  }
+#timer{
+  padding:30px 0;
+  font-size:24px;
+  font-weight:600
+}
+#timer span{
+  font-size:14px;
+  font-weight:200;
+  margin-right:30px
+}
+@media (max-width: 736px){
+#timer span{font-size:12px}}
+.home-video-area{background-color:#f9f9ff}
+
+
+.box{ animation: change 1s  ease-in  infinite ; font-size: 36px; color:#f00; font-weight: bold}  
+        @keyframes change {  
+            0%{ text-shadow: 0 0 4px #fff}  
+            50%{ text-shadow: 0 0 40px #B0B0B0}  
+            100%{ text-shadow: 0 0 4px #000}  
+        }  
