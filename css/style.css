@@ -6,6 +6,41 @@ body {
   line-height: 1.8;
   color: #6c757d;
 }
+@keyframes fade {  
+    from { opacity: 1.0; }  
+    50% { opacity: 0.4; }  
+    to { opacity: 1.0; }  
+}  
+   
+@-webkit-keyframes fade {  
+    from { opacity: 1.0; }  
+    50% { opacity: 0.4; }  
+    to { opacity: 1.0; }  
+}  
+   
+.blink {  
+    animation:fade 3000ms infinite;  
+    -webkit-animation:fade 3000ms infinite;  
+}  
+
+.blink {  
+    animation:fade 3000ms infinite;  
+    -webkit-animation:fade 3000ms infinite;  
+} 
+
+.tm-btn-subscribe {
+    background-color: #006699;
+    border-radius: .5rem;
+    border-color: white;
+   padding: 0.75rem 1.6rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.tm-btn-subscribe:hover {
+    background-color: #055278;
+}
 
 a {
   -webkit-transition: .3s all ease;

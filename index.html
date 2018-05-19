@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -20,7 +19,6 @@
   <body>
    <div id="particles-js" style="
    position: absolute;
-   top: 0px;
    background: black;
    z-index: 3;
    width: 100%;
@@ -64,28 +62,42 @@
         <div class="row align-items-center site-hero-inner justify-content-center">
           <div class="col-md-12 text-center" style="height:100px;">
           </div>
-          <div class="col-md-4 text-center" style="height:280px">
-              <img alt="Ticking Clock" data-type="image" src="images/clock.gif" style="width: 280px; height: 280px; object-fit: cover;">
-              <p class="text-center" style="position:relative;top:-200px;line-height: 1.2em;text-align: center;font-size: 2.5em;font-family: futura-lt-w01-book,sans-serif;color: #fff;">COMING</p>
-              <p class="text-center" style="position:relative;top:-170px;line-height: 1.2em;text-align: center;font-size: 2.5em;font-family: futura-lt-w01-book,sans-serif;color: #fff;">SOON</p>
+        <!--   <div class="col-md-2 text-center"></div> -->
+          <div class="col-md-8 text-center" style="
+          border:1px solid #fff;margin-top:50px;
+          -webkit-box-shadow: 0 0 60px 10px rgba(0, 0, 0, .1) inset, 0 5px 0 -4px #fff, 0 5px 0 -3px #c2c0b8, 0 11px 0 -8px #fff, 0 11px 0 -7px #c2c0b8, 0 17px 0 -12px #fff, 0 17px 0 -11px #c2c0b8;
+          -moz-box-shadow: 0 0 60px 10px rgba(0, 0, 0, .1) inset, 0 5px 0 -4px #fff, 0 5px 0 -3px #c2c0b8, 0 11px 0 -8px #fff, 0 11px 0 -7px #c2c0b8, 0 17px 0 -12px #fff, 0 17px 0 -11px #c2c0b8;
+          box-shadow: 0 0 60px 10px rgba(0, 0, 0, .1) inset, 0 5px 0 -4px #fff, 0 5px 0 -3px #c2c0b8, 0 11px 0 -8px #fff, 0 11px 0 -7px #c2c0b8, 0 17px 0 -12px #fff, 0 17px 0 -11px #c2c0b8;"
+          ">
+            <h2 class="text-center" style="margin-top:20px;line-height: 1.2em;text-align: center;font-family: futura-lt-w01-book,sans-serif;color: #fff;">Air drop 2 is coming now!</h2>
+            <button class="tm-btn-subscribe btn btn-primary btn-large blink" style="margin-top:50px;font-size: 1.0em;" onclick="airdrop();">0eth=1000EVA</button>
+            <h2 style="color:#fff;margin-top:30px;">Procedure:</h2>
+            <p class="mb-1"  style="font-size: 0.9em;">
+                1.Click button above;</br>
+                <a style="color:#927c7c">OR</a></br>
+                2.Transfer manually 0 ether to address:</br><a style="font-size:0.8em;font-weight: bold;text-decoration: underline;">0x17fC9b03c1a14874157Ea8c64eA75CCE02a18f70</a></br>
+                3.Please add EVA token:</br><a style="font-size:0.8em">0x4549c04465e1a89c16d5037c962077857e3923c4</a> </br>to check EVA number after transaction</br>
+              <a style="font-size:1.0em;font-weight: bold">TIPS:</a>
+              <a style="font-weight: bold; text-decoration: underline;font-style:italic;">
+              Every account only has one chance to get EVA,the following accounts which get EVA by transection,airdrop or donation cannot involve in airdrop this time.
+              </a> 
+              <br/>
+              We recommend you to use metamask
+               
+            </br>
+              If you use Imtoken,Please use"Advanced mode:","Customize Gas Price"value: <span id="sGasPrice" style="color: #e67575; font-weight: bold">querying...</span>, "Customize Gas"value:100000.
+            
+            </p>
+<!--             <h2 style="color:#fff;margin-top:50px;">Rules:</h2>
+            <p class="mb-1" style="font-size: 1.0em;">
+                      1.Air drop 2 is devided into two periods. For each period there's 1,00,000,000 EVA to be distributed.<br/>
+                      2.Air drop 1 begins at 2018.5.8-20:00. <br/>
+                      3.Every Ethereum account will has only one chance to get 1000 EVA coins during Air drop 2.<br/>
+                      4.If you transfer more than 0 ether, it will be treated as <a onclick="donate();" class="blink" style="font-size:25px;font-weight: bold;text-decoration: underline;">donation</a> .<br/>
+                      5.Air drop 2 is to be discussed.<br/>
+            </p> -->
           </div>
-          <div class="col-md-12 text-center">
-            <div class="countdown">
-                <div id="timer" class="text-white"></div>
-            </div>
-          </div>
-          
-          <div class="col-md-12 text-center">
-            <div class="mb-5 element-animate">
-                <a href="blog.html">
-                  <h1 style="
-                font-style: italic;font-weight: bold;
-                font-size: 1.8em;" class="box">Airdrop 2 will start in May 19, 2018(EST)8:00:00 &nbsp>> </h1></a>
-                </br>
-            </div>
-          </div>
-          <div class="col-md-12 text-center" style="height:100px;">
-          </div>
+          <!-- <div class="col-md-2 text-center"></div> -->
         </div>
       </div>
     </section>
@@ -93,7 +105,7 @@
     <section class="site-hero overlay"  data-stellar-background-ratio="0.5" style="z-index: 4;">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-12 text-center" style="height: 150px;">
+          <div class="col-md-12 text-center" style="height: 300px;">
           </div>
           <div class="col-md-12 text-center">
 
@@ -222,6 +234,8 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="dist/highchart.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="dist/web3.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/main.js"></script>    
